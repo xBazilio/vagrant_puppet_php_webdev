@@ -55,23 +55,23 @@ vagrant_puppet_php_webdev
 
 * Установить NFS Kernel Server, если ещё не установлен
 
-    sudo apt-get install nfs-kernel-server
+    ```sudo apt-get install nfs-kernel-server```
 
 * Создать папку для экпорта
 
-    sudo mkdir -p /home/nfs/www
+    ```sudo mkdir -p /home/nfs/www```
 
 * Скопировать строку из файла fstab.txt в файл /etc/fstab. Заменить USERNAME на имя пользователя, под которым ведётся работа на Host машине
 
 * Примонтировать папку с проектами
 
-    sudo mount -a
+    ```sudo mount -a```
 
 * Скопировать строки из файла exports.txt в файл /etc/exports. Ограничить диапазон IP адресов, если требуется.
 
 * Перезапустить NFS Kernel Server
 
-    sudo service nfs-kernel-server restart
+    ```sudo service nfs-kernel-server restart```
 
 ## Установка плагина для Vagrant
 
