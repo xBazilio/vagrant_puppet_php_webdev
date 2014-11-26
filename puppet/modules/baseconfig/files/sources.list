@@ -1,0 +1,17 @@
+deb http://mirror.yandex.ru/debian/ wheezy main
+deb-src http://mirror.yandex.ru/debian/ wheezy main
+
+deb http://security.debian.org/ wheezy/updates main
+deb-src http://security.debian.org/ wheezy/updates main
+
+# wheezy-updates, previously known as 'volatile'
+deb http://mirror.yandex.ru/debian/ wheezy-updates main
+deb-src http://mirror.yandex.ru/debian/ wheezy-updates main
+
+# dotdeb.org
+deb http://packages.dotdeb.org wheezy all
+deb-src http://packages.dotdeb.org wheezy all
+
+# php 5.5
+deb http://packages.dotdeb.org wheezy-php55 all
+deb-src http://packages.dotdeb.org wheezy-php55 all

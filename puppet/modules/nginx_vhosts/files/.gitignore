@@ -1,0 +1,3 @@
+/vhosts/*
+!/vhosts/default
+!/vhosts/sites.loc

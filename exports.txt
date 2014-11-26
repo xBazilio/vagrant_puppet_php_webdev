@@ -1,0 +1,2 @@
+/home/nfs   192.168.0.0/255.255.0.0(rw,fsid=0,insecure,no_subtree_check,async)
+/home/nfs/www   192.168.0.0/255.255.0.0(rw,nohide,insecure,no_subtree_check,async,all_squash,anonuid=1000,anongid=1000)

@@ -1,0 +1,1 @@
+/home/USERNAME/www    /home/nfs/www   none    bind  0  0
