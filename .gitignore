@@ -4,6 +4,7 @@
 !/.gitignore
 !/exports.txt
 !/fstab.txt
+!/LICENSE
 !/mailtool-vagrant.php
 !/README-ru.md
 !/README.md
