@@ -30,7 +30,7 @@ Vargant and puppet PHP web development enviroment
 * Можно создавать сайты вида *.loc без необходимости перезапускать веб-сервер
 * Все проекты доступны в папке `/home/USER/www`
 * Письма, отправленные функцией `mail()` сохраняются в виде .eml файлов в папке `/home/USER/www/EMAILS`
-* Для проектов вида \*.loc необходимо создавать структуру папок вида /home/USER/www/\*.loc/web/htdocs, при этом папка htdocs - это DOCUMENT_ROOT
+* Для проектов вида \*.loc необходимо создавать структуру папок вида `/home/USER/www/\*.loc/web/htdocs`, при этом папка htdocs - это DOCUMENT_ROOT
 * Можно создавать проекты внутри папки `/home/USER/www` с произвольной конфигурацией. Для этого виртуальные хосты создавать в папке `/home/USER/www/puppet/modules/nginx_vhosts/files/vhosts` и выполнять ```vagrant reload --provision```
 
 # Информация о машине

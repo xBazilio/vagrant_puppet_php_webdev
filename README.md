@@ -26,11 +26,11 @@ Everywhere you see USER - it's your system username.
 
 # Features
 
-* Web projects are working on nginx + php-fpm + mysql technology
+* Web projects are running on nginx + php-fpm + mysql technology
 * You can create sites like *.loc without necessity to restart the web server
 * All projects are located in `/home/USER/www`
 * Letters sent with `mail()` are stored in .eml files in `/home/USER/www/EMAILS`
-* For projects like \*.loc you have to create folder structure like /home/USER/www/\*.loc/web/htdocs, where htdocs folder is the DOCUMENT_ROOT
+* For projects like \*.loc you have to create folder structure like `/home/USER/www/\*.loc/web/htdocs`, where htdocs folder is the DOCUMENT_ROOT
 * You can create projects in the folder `/home/USER/www` with custom config. Create virtualhosts in the folder `/home/USER/www/puppet/modules/nginx_vhosts/files/vhosts` and run `vagrant reload --provision`
 
 # Virtual machine info
@@ -85,7 +85,7 @@ Please be patient and run:
 
     vagrant up
 
-System will be updated and software will be installed and set.
+Virtual system will be updated and software will be installed and set.
 
 After the first run it is recommended to reload virtual machine for dist upgrade take effect:
 
