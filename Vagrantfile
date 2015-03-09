@@ -1,5 +1,5 @@
 # You can adjust these variables to suit your needs
-box      = 'puppetlabs/debian-7.6-64-puppet'
+box      = 'puppetlabs/debian-7.8-64-puppet'
 hostname = 'webdev'
 ip       = '192.168.50.10'
 hostip   = '192.168.50.1'

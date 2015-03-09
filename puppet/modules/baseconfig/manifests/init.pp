@@ -14,6 +14,9 @@ class baseconfig {
 
         'dist-upgrade':
         command => '/usr/bin/apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade';
+
+        'reconfigure timezone':
+        command => '/usr/sbin/dpkg-reconfigure -f noninteractive tzdata';
     }
 
     host { 'hostmachine':
@@ -21,6 +24,10 @@ class baseconfig {
     }
 
     file {
+        '/etc/timezone':
+        before => Exec['reconfigure timezone'],
+        source => 'puppet:///modules/baseconfig/timezone';
+
         '/home/vagrant/.bashrc':
         owner => 'vagrant',
         group => 'vagrant',

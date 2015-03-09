@@ -6,9 +6,9 @@ stage { 'pre':
 # create other stages for ordering
 stage {'php_base':}
 stage {'php_modules':}
-stage {'dev_tools':}
+stage {'tools':}
 
-Stage['main']->Stage['php_base']->Stage['php_modules']->Stage['dev_tools']
+Stage['main']->Stage['php_base']->Stage['php_modules']->Stage['tools']
 
 # add the baseconfig module to the new 'pre' run stage
 class { 'baseconfig':
@@ -22,8 +22,8 @@ class { 'php_base':
 class { 'php_modules':
     stage => 'php_modules'
 }
-class { 'dev_tools':
-    stage => 'dev_tools'
+class { 'tools':
+    stage => 'tools'
 }
 
 # set defaults for file ownership/permissions
@@ -33,4 +33,4 @@ File {
     mode  => '0644',
 }
 
-include baseconfig, php_base, php_modules, mysql, nginx, nginx_vhosts, dev_tools
+include baseconfig, php_base, php_modules, mysql, nginx, nginx_vhosts, tools

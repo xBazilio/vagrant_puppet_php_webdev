@@ -1,7 +1,10 @@
-class dev_tools {
+class tools {
     package {
-        ['git', 'curl']:
+        ['git', 'curl', ntp]:
         ensure => present;
+
+        ['mlocate']:
+        ensure => purged;
     }
 
     exec { 'composer_install':
